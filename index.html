@@ -11,44 +11,131 @@
     <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- Jquery -->
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/style.css">
+     <!-- Vendor CSS Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-bar">
-            <i class='bx bx-menu abrirMenu'></i>
-            <span class="logo navLogo"><a href="#">Pesca Sustentavel</a></span>
 
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="#">Pesca Sustentavel</a></span>
-                    <i class='bx bx-x fecharMenu'></i>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu abrirMenu'></i>
+                <span class="logo navLogo"><a href="#">Pesca Sustentavel</a></span>
+    
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">Pesca Sustentavel</a></span>
+                        <i class='bx bx-x fecharMenu'></i>
+                    </div>
+    
+                    <ul class="nav-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Doação</a></li>
+                    </ul>
                 </div>
-
-                <ul class="nav-links">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Noticias</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Doação</a></li>
-                </ul>
-            </div>
-
-            <div class="darkLight">
-                <div class="dark-light">
-                    <i class='bx bx-moon moon'></i>
-                    <i class='bx bx-sun sun'></i>
+    
+                <div class="darkLight">
+                    <div class="dark-light">
+                        <i class='bx bx-moon moon'></i>
+                        <i class='bx bx-sun sun'></i>
+                    </div>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <!-- ======= banner ======= -->
+    <section id="banner" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+        <h1>Pesca Sustentável</h1>
+        <h2>Descubra mais sobre a pesca sustentavel e ajude o planeta</h2>
+        <div class="d-flex align-items-center">
+            <i class="bx bxs-right-arrow-alt saiba-mais-icon"></i>
+            <a href="#about" class="btn-saiba-mais scrollto">Saiba mais</a>
         </div>
-    </nav>
+        </div>
+    </section><!-- End banner -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/script.js"></script>
+    <main id="main">
+        <!-- ======= Cards Section ======= -->
+        <section id="cards" class="cards">
+          <div class="container">
+    
+            <div class="row">
+              <div class="col-xl-4 col-lg-5" data-aos="fade-up">
+                <div class="content">
+                  <h3>Por que a Pesca Sustentável é importante para a conservação da fauna marinha?</h3>
+                  <p>
+                    A pesca sustentável é uma das práticas que devem ser adotadas para garantir a sobrevivência das atividades pesqueiras...
+                  </p>
+                  <div class="text-center">
+                    <a href="#" class="more-btn">Saiba Mais<i class="bx bx-chevron-right"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-7 d-flex">
+                <div class="icon-boxes d-flex flex-column justify-content-center">
+                  <div class="row">
+                    <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                      <div class="icon-box mt-4 mt-xl-0">
+                        <i class="bi bi-water"></i>
+                        <h4>Promove a proteção da fauna marinha</h4>
+                        <p>
+                            As atividades da pesca sustentável são totalmente adequadas aos ritmos que os peixes precisam para se reproduzirem, promovendo a proteção da fauna marinha
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                      <div class="icon-box mt-4 mt-xl-0">
+                        <i class="bi bi-trash"></i>
+                        <h4>Evita ao máximo qualquer tipo de desperdício</h4>
+                        <p>
+                            Os peixes e espécies são aproveitadas ao máximo, e graças à certificações como a <strong>MSC</strong>, é possível o monitormaneto constante.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                      <div class="icon-box mt-4 mt-xl-0">
+                        <i class="bi bi-building"></i>
+                        <h4>Poluição reduzida</h4>
+                        <p>
+                            Além de reduzir a produção de resíduos poluentes, essa pesca sustentável também reduz o uso de produtos químicos.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </section><!-- End Cards Section -->
+    </main>
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>
