@@ -30,7 +30,6 @@ a{
 }
 
 body{
-    height: 1000vh;
     background-color: var(--body-color);
 }
 
@@ -60,6 +59,17 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--cor-primaria);
   border-radius: 20px;
   border: 3px solid var(--white-black);
+}
+
+footer{
+  background-color: var(--nav-color);
+}
+
+.nav-link{
+  color: var(--nav-text-color);
+}
+.nav-link:hover{
+  color: var(--cor-primaria-hover);
 }
 
 /*--------------------------------------------------------------
