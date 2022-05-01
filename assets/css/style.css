@@ -421,6 +421,104 @@ nav .nav-bar .logo a{
   transform: translateX(5px);
 }
 
+.veja-mais-noticias{
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+# toptext
+--------------------------------------------------------------*/
+.toptext {
+  padding: 15px 0;
+  background: var(--cor-primaria);
+  min-height: 40px;
+  margin-top: 70px;
+  color: #fff;
+}
+.toptext h2 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.toptext ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+}
+.toptext ol a {
+  color: #fff;
+  transition: 0.3s;
+}
+.toptext ol a:hover {
+  text-decoration: underline;
+}
+.toptext ol li + li {
+  padding-left: 10px;
+}
+.toptext ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: var(--text-color);
+  content: "/";
+}
+
+/*--------------------------------------------------------------
+# contato
+--------------------------------------------------------------*/
+.contato .info-box {
+  color: var(--text-color);
+  background: var(--cor-fundo);
+  padding: 30px;
+}
+.contato .info-box i {
+  font-size: 38px;
+  line-height: 0;
+  color: var(--cor-primaria);
+}
+.contato .info-box h3 {
+  font-size: 20px;
+  color: var(--cor-primaria);
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+.contato .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.contato .email-form {
+  background: var(--cor-fundo);
+  padding: 30px;
+  height: 100%;
+}
+.contato .email-form input, .contato .email-form textarea {
+  border-radius: 14px;
+  background-color: var(--cor-fundo);
+  box-shadow: none;
+  font-size: 14px;
+}
+.contato .email-form input:focus, .contato .email-form textarea:focus {
+  border-color: var(--cor-primaria);
+}
+.contato .email-form input {
+  padding: 10px 15px;
+}
+.contato .email-form textarea {
+  padding: 12px 15px;
+}
+.contato .email-form button[type=submit] {
+  background: var(--cor-primaria);
+  border: 0;
+  padding: 10px 30px;
+  color: var(--white-black);
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+
 @media (min-width: 1024px) {
   #banner {
     background-attachment: fixed;
@@ -433,6 +531,10 @@ nav .nav-bar .logo a{
   }
 }
 @media (max-width: 768px) {
+  .toptext {
+    margin-top: 57px;
+  }
+  
   nav .nav-bar .abrirMenu{
     display: block;
   }
