@@ -497,6 +497,7 @@ nav .nav-bar .logo a{
 .contato .email-form input, .contato .email-form textarea {
   border-radius: 14px;
   background-color: var(--cor-fundo);
+  color: var(--text-color);
   box-shadow: none;
   font-size: 14px;
 }
