@@ -2,7 +2,6 @@ window.addEventListener('load', () => {AOS.init({duration: 1000,easing: 'ease-in
 const onscroll = (el, listener) => {el.addEventListener('scroll', listener)}
 let backtotop = document.querySelector('.back-to-top')
 if (backtotop) {const toggleBacktotop = () => {if (window.scrollY > 100) {backtotop.classList.add('active')} else {backtotop.classList.remove('active')}};window.addEventListener('load', toggleBacktotop);onscroll(document, toggleBacktotop);}
-
 const body = document.querySelector("body"),nav = document.querySelector("nav"),alterarModo = document.querySelector(".dark-light"),abrirMenu = document.querySelector(".abrirMenu"),fecharMenu = document.querySelector(".fecharMenu");
 let getMode = localStorage.getItem("mode");
 if(getMode && getMode === "dark-mode"){body.classList.add("dark");alterarModo.classList.toggle("active")}
